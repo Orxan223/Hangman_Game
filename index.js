@@ -1,29 +1,42 @@
 var sozler = ["alma", "armud", "banan", "nar"]
 
-var s = document.querySelector('#sehv')
-var sans = document.querySelector('#sansqaldi')
+var sans = document.querySelector('#sans')
 var u = document.querySelector('#udus')
 var m = document.querySelector('#meglubiyyet')
 var i = document.querySelector('#isdifadeci')
 var d = document.querySelector('#duzgun')
 var t = document.querySelector('#texmin')
+var b = document.querySelector('#bitdi')
 
 
 var sozIndex = Math.floor(Math.random() * sozler.length);
 var soz = sozler[sozIndex]
-
-// var i = 0
-
+console.log(soz)
+var alt = [...soz].fill("_")
+console.log(d)
 var texminler = []
+var limit = 9
 
-t.innerHTML = texminler
-console.log(texminler)
+window.onkeyup = function (e) {
+    for (let i = 0; i < soz.length; i++) {
+        if (soz[i] == e.key) {
+            alt[i] = e.key
+            d.innerHTML = alt
+        } 
+    }
+    texminler.push(e.key)
+    t.innerHTML = texminler
+    for (let i = 0; i < texminler.length; i++) {
+        
+       
+        if (limit === 0) {
+           b.innerHTML = 'Oyun bitdi'
+        }
+        sans.innerHTML = limit
+    }
+    limit--
 
-window.onkeyup = function(e){
-    texminler.push(e.key) 
+
 }
-
-
-
 
 

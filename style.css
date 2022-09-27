@@ -1,7 +1,18 @@
-.box{
+.box {
     text-align: center;
+
+}
+
+#oyun {
+    color: blue;
 }
 
 #duzgun {
     letter-spacing: 4px;
+    color: red;
+}
+
+
+#texmin {
+    color: red;
 }
