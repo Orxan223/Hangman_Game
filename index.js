@@ -12,10 +12,13 @@ var t = document.querySelector('#texmin')
 var sozIndex = Math.floor(Math.random() * sozler.length);
 var soz = sozler[sozIndex]
 
-var i = 0
+// var i = 0
+
 var texminler = []
+
 t.innerHTML = texminler
 console.log(texminler)
+
 window.onkeyup = function(e){
     texminler.push(e.key) 
 }
