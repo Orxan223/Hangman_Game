@@ -2,7 +2,6 @@ var sozler = ["alma", "armud", "banan", "nar"]
 
 var sans = document.querySelector('#sans')
 var q = document.querySelector('#qalibiyyet')
-var m = document.querySelector('#meglubiyyet')
 var i = document.querySelector('#isdifadeci')
 var d = document.querySelector('#duzgun')
 var t = document.querySelector('#texmin')
