@@ -26,8 +26,6 @@ window.onkeyup = function (e) {
             alt[i] = e.key
             d.innerHTML = alt
             if (alt.join('').includes('_') == false) {
-                console.log(alt)
-                console.log(alt.join('').includes('_') == false)
                 // alt xet qalmadisa qalib oluruq
                 qalib++
                 q.innerHTML = qalib
@@ -45,16 +43,10 @@ window.onkeyup = function (e) {
         sans.innerHTML = limit
         if (limit === 0) {
             sans.innerHTML = alert('Oyun bitdi, bir daha cehd edin')
-
             return
-
-
         }
-
     }
     limit--
-
-
 }
 
 
