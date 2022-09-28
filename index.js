@@ -44,7 +44,7 @@ window.onkeyup = function (e) {
     for (let i = 0; i < texminler.length; i++) {
         sans.innerHTML = limit
         if (limit === 0) {
-            sans.innerHTML = alert('Oyun bitdi')
+            sans.innerHTML = alert('Oyun bitdi, bir daha cehd edin')
 
             return
 
